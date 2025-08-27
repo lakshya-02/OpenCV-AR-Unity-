@@ -35,6 +35,7 @@ public class Emitter : MonoBehaviour
             {
                 particle.transform.position = transform.TransformPoint(Random.insideUnitSphere * 0.5f);
                 particle.transform.localScale = Random.Range(SizeRange.x, SizeRange.y) * Vector3.one;
+                particle.SetActive(true);
                 break;
             }
         }

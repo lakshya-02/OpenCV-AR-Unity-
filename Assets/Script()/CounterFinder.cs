@@ -25,7 +25,7 @@ public class CounterFinder : WebCamera
 
         Cv2.Flip(image, image, ImageFlip);
         Cv2.CvtColor(image, processImage, ColorConversionCodes.BGR2GRAY);
-        Cv2.Threshold(processImage, processImage, Threshold, 255, ThresholdTypes.Binary);
+        Cv2.Threshold(processImage, processImage, Threshold, 255, ThresholdTypes.BinaryInv);
         Cv2.FindContours(processImage, out contours, out hierarchy, RetrievalModes.Tree, ContourApproximationModes.ApproxSimple, null);
         polygonCollider.pathCount = 0;
 
@@ -53,7 +53,7 @@ public class CounterFinder : WebCamera
     }
     private Vector2[] tovector2(Point[] points)
     {
-        Vector2[] vectorList = new Vector2[points.Length];
+        vectorList = new Vector2[points.Length];
         for (int i = 0; i < points.Length; i++)
         {
             vectorList[i] = new Vector2(points[i].X, points[i].Y);
@@ -63,10 +63,10 @@ public class CounterFinder : WebCamera
 
     public void drawContour(Mat img, Scalar color, int thickness, Point[] points)
     {
-        for (int i = 0; i < points.Length; i++)
+        for (int i = 1; i < points.Length; i++)
         {
-            int prevIndex = (i == 0) ? points.Length - 1 : i - 1;
-            Cv2.Line(img, points[prevIndex], points[i], color, thickness);
+            Cv2.Line(img, points[i - 1], points[i], color, thickness);
         }
+        Cv2.Line(img, points[points.Length - 1], points[0], color, thickness);
     }
 }
