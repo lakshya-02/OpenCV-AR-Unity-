@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -281,9 +281,10 @@ RectTransform:
   m_GameObject: {fileID: 241763134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1069356291}
   - {fileID: 1881361030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -308,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &997340568
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -374,6 +375,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!4 &1069356291 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+  m_PrefabInstance: {fileID: 1863804228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106124994
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1655672081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +758,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1001 &1863804228
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 241763138}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 510
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e21ca393da5570f4189efcae79adb096, type: 2}
+    - target: {fileID: 919132149155446097, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
+      propertyPath: m_Name
+      value: tic tac toe grid
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7711baad6f4103489b1143ddc95a667, type: 3}
 --- !u!1 &1881361029
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +859,7 @@ RectTransform:
   m_GameObject: {fileID: 1881361029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
+  m_LocalScale: {x: 0.021, y: 0.021, z: 0.021}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 241763138}
@@ -840,11 +919,11 @@ MonoBehaviour:
   Surface: {fileID: 1881361029}
   ImageFlip: 1
   Threshold: 96.4
-  ShowProcessingImage: 1
+  ShowProcessingImage: 0
   CurveAccuracy: 10
   MinArea: 1000
   polygonCollider: {fileID: 997340568}
-  preferredDeviceIndex: 0
+  preferredDeviceIndex: -1
 --- !u!1 &1999708909
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1999708910
 MonoBehaviour:
   m_ObjectHideFlags: 0
